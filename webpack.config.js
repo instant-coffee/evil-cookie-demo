@@ -8,7 +8,8 @@ module.exports = require('./shared.webpack.config')({
     devServer: {
       port: process.env.DEV_SERVER_PORT || 8080,
       contentBase: path.resolve(__dirname, 'build'),
-      outputPath: path.resolve(__dirname, 'build')
+      outputPath: path.resolve(__dirname, 'build'),
+      historyApiFallback: true
     }
   },
   defineVariables: {
