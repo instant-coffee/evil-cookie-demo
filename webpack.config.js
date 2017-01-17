@@ -6,7 +6,7 @@ module.exports = require('./shared.webpack.config')({
   extraConfig: {
     devtool: 'cheap-module-source-map',
     devServer: {
-      port: process.env.DEV_SERVER_PORT || 8080,
+      port: process.env.DEV_SERVER_PORT || 8081,
       contentBase: path.resolve(__dirname, 'build'),
       outputPath: path.resolve(__dirname, 'build'),
       historyApiFallback: true
