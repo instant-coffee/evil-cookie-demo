@@ -1,0 +1,30 @@
+SyntaxError: Unexpected token (15:2)
+
+[0m [90m 13 | [39m
+ [90m 14 | [39mrender(
+[31m[1m>[22m[39m[90m 15 | [39m  [33m<[39m[33mProvider[39m store[33m=[39m{store}[33m>[39m
+ [90m    | [39m  [31m[1m^[22m[39m
+ [90m 16 | [39m    [33m<[39m[33mRouter[39m history[33m=[39m{hashHistory}[33m>[39m{routes}[33m<[39m[33m/[39m[33mRouter[39m[33m>[39m
+ [90m 17 | [39m  [33m<[39m[33m/[39m[33mProvider[39m[33m>[39m[33m,[39m
+ [90m 18 | [39m  document[33m.[39mgetElementById([32m'root'[39m)[0m
+
+BabelLoaderError: SyntaxError: Unexpected token (15:2)
+
+[0m [90m 13 | [39m
+ [90m 14 | [39mrender(
+[31m[1m>[22m[39m[90m 15 | [39m  [33m<[39m[33mProvider[39m store[33m=[39m{store}[33m>[39m
+ [90m    | [39m  [31m[1m^[22m[39m
+ [90m 16 | [39m    [33m<[39m[33mRouter[39m history[33m=[39m{hashHistory}[33m>[39m{routes}[33m<[39m[33m/[39m[33mRouter[39m[33m>[39m
+ [90m 17 | [39m  [33m<[39m[33m/[39m[33mProvider[39m[33m>[39m[33m,[39m
+ [90m 18 | [39m  document[33m.[39mgetElementById([32m'root'[39m)[0m
+
+    at transpile (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/babel-loader/lib/index.js:52:13)
+    at Object.module.exports (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/babel-loader/lib/index.js:133:12)
+    at applySyncOrAsync (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/happypack/lib/applyLoaders.js:341:21)
+    at apply (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/happypack/lib/applyLoaders.js:268:5)
+    at /Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/happypack/lib/applyLoaders.js:131:7
+    at applyPitchLoader (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/happypack/lib/applyLoaders.js:184:14)
+    at applyPitchLoader (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/happypack/lib/applyLoaders.js:192:14)
+    at applyPitchLoaders (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/happypack/lib/applyLoaders.js:222:4)
+    at applyLoaders (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/happypack/lib/applyLoaders.js:116:3)
+    at HappyWorker.compile (/Users/lachlanmackenzie/Web Projects/SV/evil-cookies/node_modules/happypack/lib/HappyWorker.js:32:3)
