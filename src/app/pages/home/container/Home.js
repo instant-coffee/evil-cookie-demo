@@ -8,10 +8,10 @@ import Cookieconsent from 'cookieconsent';
 export default class Home extends React.Component {
 
   render() {
-    // return(
-    //   <div id="home">
-    //     <h1 className="text-center">EVIL BIKES</h1>
-    //   </div>
-    // );
+    return(
+      <div id="home">
+        <h1>EVIL</h1>
+      </div>
+    );
   }
 }
