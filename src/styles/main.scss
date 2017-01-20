@@ -24,3 +24,27 @@ body {
 		margin-left: 60px;
 	}
 }
+
+.cc-theme-evil.cc-window {
+  padding: 0;
+}
+
+.cc-floating.cc-theme-evil .cc-message {
+  margin: 2em;
+  margin-bottom: 1.5em;
+}
+
+.cc-banner.cc-theme-evil .cc-btn {
+  margin: 0;
+  background-color: #1B97A1;
+  padding: .8em 1.8em;
+  height: 100%;
+}
+
+.cc-banner.cc-theme-evil .cc-message {
+  margin-left: 1em;
+}
+
+.cc-floating.cc-theme-evil .cc-btn +.cc-btn {
+  margin-left: 0;
+}
