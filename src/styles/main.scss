@@ -26,11 +26,13 @@ body {
 }
 
 .cc-theme-evil.cc-window {
+	align-items: center;
 	color: #999999;
   padding: 10px;
 }
 
 .cc-theme-evil .cc-message {
+	// flex: 1;
   width: auto;
   background: #060606;
   padding: 20px 76px 20px 16px;
