@@ -6,14 +6,41 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 				<link rel="stylesheet" type="text/css" href="../styles/main.scss" />
-				<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js">
-				</script>
+				<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 				<script>
-					window.addEventListener("load", function(){
-					window.cookieconsent.initialise({
-					  "palette": {},
-					  "theme": "evil"
-					})});
+				  window.addEventListener("load", function(){
+				    window.cookieconsent.initialise({
+			        location: {
+			          serviceDefinitions: {
+			            locationService: function( options ) {
+			              return {
+			                url: 'http://www.geoplugin.net/javascript.gp', 
+			          			isScript: true,
+			          			callback: function(script, response){
+			          				var countryCode = geoplugin_countryCode()
+			          				console.log(countryCode);
+			          				return({code: 'DE'})
+			          			}
+			              }
+			            }
+			          }, 
+			        	services: [
+			      		{name: 'locationService'}
+			      		],
+			      	},         
+				      theme: 'evilbikes',
+				      content: {
+				        header: 'We use cookies on this site',
+				        message: 'We use cookies to store information and provide you a better experience. By dropping in, you agree on our use of cookies.',
+				        dismiss: 'Got it!',
+				        allow: 'Allow cookies',
+				        deny: 'Decline',
+				        link: 'Learn more',
+				        href: 'http://www.evil-bikes.com/pages/cookie-policy',
+				        close: '&#x274c;'
+				      }
+				    })
+				  });
 				</script>
     </head>
     <body>
